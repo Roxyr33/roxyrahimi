@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFE5EC;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FF8FAB;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .post-form, .post {
+            background-color: #FFC2D1;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .post-form input, .post-form textarea, .post-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #FFB3C6;
+            border-radius: 5px;
+        }
+        .post-form button {
+            background-color: #FB6F92;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .post-form button:hover {
+            background-color: #FF8FAB;
+        }
+        .post {
+            background-color: #FFB3C6;
+        }
+        .post .post-category {
+            font-weight: bold;
+        }
+        .post .post-content {
+            margin-top: 10px;
+        }
+        .post .post-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .post .post-footer button {
+            background-color: #FB6F92;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .post .post-footer button:hover {
+            background-color: #FF8FAB;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Community Forum</h1>
+        <p>Share your thoughts, questions, ideas, and recommendations</p>
+    </header>
+    <div class="container">
+        <div class="post-form">
+            <h2>Create a Post</h2>
+            <form>
+                <input type="text" name="title" placeholder="Title" required>
+                <textarea name="content" placeholder="What's on your mind?" rows="5" required></textarea>
+                <select name="category">
+                    <option value="thoughts">Thoughts</option>
+                    <option value="questions">Questions</option>
+                    <option value="ideas">Ideas</option>
+                    <option value="restaurant">Restaurant Recommendations</option>
+                    <option value="starbucks">Starbucks Recommendations</option>
+                    <option value="traderjoes">Trader Joe's Recommendations</option>
+                    <option value="clothing">Clothing Items</option>
+                </select>
+                <div>
+                    <input type="checkbox" name="anonymous"> Post Anonymously
+                </div>
+                <button type="submit">Post</button>
+            </form>
+        </div>
+        <div class="post">
+            <div class="post-category">Thoughts</div>
+            <div class="post-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+            </div>
+            <div class="post-footer">
+                <div class="post-author">Posted by User123</div>
+                <button>Respond</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
